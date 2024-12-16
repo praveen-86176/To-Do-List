@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="home.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <h2 id="welcomeMessage"></h2>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="welcome">
+                <input type="text" id="taskInput" placeholder="Enter your task here" />
+                <select id="category">
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            
+            <section class="todo-section">
+                <h2>To-Do Tasks</h2>
+                <ul id="todoTasks"></ul>
+            </section>
+
+            
+
+            <section class="todo-section">
+                <h2>Completed Tasks</h2>
+                <ul id="completedTasks"></ul>
+            </section>
+        </main>
+        
+        
+        </div>
+    </div>
+</body>
+</html>
