@@ -14,9 +14,8 @@ It allows users to add, edit, delete, and mark tasks as complete, making task ma
 	•	Persistent Storage: Save tasks locally so they are not lost after refreshing.
 
 # Technology Stack:
-	•	Frontend: HTML, CSS, JavaScript
-	•	Backend: (Optional) Node.js, Express.js (for database integration)
-	•	Database: (Optional) MongoDB or LocalStorage for data persistence
+	•	Frontend: HTML, CSS, JavaScript 
+	•	Database: LocalStorage for data persistence
  
  # Future Enhancements:
 	•	User authentication to create personal task lists.
