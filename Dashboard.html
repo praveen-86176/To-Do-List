@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="header-container">
+    <div class="dashboard-title">
+      <h1>Dashboard</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="taskSearch" placeholder="Search your task here...">
+    </div>
+    <div class="date" id="date"></div>
+  </div>
+
+  <div class="sidebar">
+    <div class="profile">
+      <img src="" alt="Client">
+      <div>
+        <h3 id="name"></h3>
+        <p id="email"></p>
+      </div>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="Dashboard.html"><img src="dashboard-icon.png" alt="">Dashboard</a></li>
+        <li><a href="index.html"><img src="dashboard-icon.png" alt="">Add task</a></li>
+        <li><a href="#"><img src="dashboard-icon.png" alt="">My Task</a></li>
+        <li><a href="#"><img src="dashboard-icon.png" alt="">profile</a></li>
+        <li><a href="#"><img src="dashboard-icon.png" alt="">Settings</a></li>
+        <li><a href="#"><img src="dashboard-icon.png" alt="">About</a></li>
+      </ul>
+    </nav>
+    <button class="logout-btn">Logout</button>
+  </div>
+
+  <div class="tasks-container">
+    <div class="task-section">
+      <div class="task-list">
+        <h2>To-Do</h2>
+        <h3>In Progress</h3>
+        <div class="task-item"></div>
+
+        <h3>Not Started</h3>
+        <div class="task-item"></div>
+      </div>
+    </div>
+
+    <div class="task-status">
+      <h2>Task Status</h2>
+      <div class="status-circle">
+        <div>
+          <h3 class="completed">84%</h3>
+          <p>Completed</p>
+        </div>
+        <div>
+          <h3 class="in-progress">46%</h3>
+          <p>In Progress</p>
+        </div>
+        <div>
+          <h3 class="not-started">13%</h3>
+          <p>Not Started</p>
+        </div>
+      </div>
+
+      <h2>Completed Tasks</h2>
+      <div class="completed-tasks"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50;
+    padding: 50;
+    background: whitesmoke;
+}
+
+header {
+    background: #56d6e9;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #user-profile {
+    margin-right: 5em;
+}
+
+#user-name {
+    margin-right: 5em;
+}
+
+
+.Menu_Bar{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+.menu-icon
+{
+    float: right;
+    margin: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#close
+{
+    margin: 20px;
+    float: right;
+    color: #56d6e9;
+    transform: rotate(45deg);
+    font-size: 20px;
+    cursor: pointer;
+}
+#menu li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    margin: 5px 0px;
+    transition: all 0.3s ease;
+}
+#menu
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+#container {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color:#56d6e9;
+    transition: right 0.3s ease-in-out;
+}
+
+#menu {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+main {
+    padding: 5em;
+}
+
+.Task-Input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+    margin: 0 20px; 
+}
+
+.Task-Input input,
+.Task-Input select,
+.Task-Input button {
+    flex: 20; 
+    max-width: 150px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task-btn {
+    max-width: 120px; 
+    background-color: #56d6e9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Task Form Styles */
+ #task-form {
+    margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#task-form input, #task-form select {
+    margin-right: 0.5em;
+    padding: 0.5em;
+}
+
+#task-form button {
+    padding: 0.5em 1em;
+    background: #56d6e9;
+    color: turquoise;
+    border: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Task List Section */
+ #task-list-section {
+    margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} 
+
+
+/* Task Item Styles */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    border-bottom: 1px solid #9e1a1a;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+/* Priority Colors */
+.task-priority-high {
+    color: red;
+}
+
+.task-priority-medium {
+    color: orange;
+}
+
+.task-priority-low {
+    color: green;
+}
+
+/* Status Icons */
+.task-item.completed {
+    background-color: #e0ffe0; 
+    border-left: 5px solid green;
+}
+
+.task-item.incomplete {
+    background-color: #ffe0e0; 
+    border-left: 5px solid red;
+}
+
+/* Button Styles */
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color:black;
+    background-color:white;
+}
+button:hover {
+    background-color: rgb(234, 127, 44); 
+  }
+
+button.complete-btn {
+    background: #56d6e9;
+    color: white;
+}
+
+button.delete-btn {
+    background: whitesmoke;
+    color: rgb(220, 137, 20);
+    border-radius: 10%;
+}
+
+#logout-btn {
+    padding: 0.5em;
+    background: rgb(208, 180, 88);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+
+
+
+
+
+
+
+
+
+
+
+

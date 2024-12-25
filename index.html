@@ -3,27 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>To-Do List</h1>
-    <input type="text" id="taskInput" placeholder="Add a new task...">
-    <select id="category">
-        <option value="Personal">Personal</option>
-        <option value="Work">Work</option>
-    </select>
-    <button onclick="addTask()">Add Task</button>
-    <div class="task-container">
-        <div>
-            <h2><align="center">Pending Tasks</align></h2>
-            <ul id="pendingTasks"></ul>
-        </div>
-        <div>
-            <h2><align="center">Done Tasks</align></h2>
-            <ul id="doneTasks"></ul>
+    <header>
+        <h1>To-Do List </h1>
+        <div id="user-profile">
+            <span id="user-name">Welcome  User!</span>
+            <button id="logout-btn"> Logout </button>
+        
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Slide Menu</title>
+ 
+</head>
+<body>
+    <!-- Menu Container -->
+    <div id="container">
+        <div id="menu">
+            <!-- Menu Content -->
+            <button onclick="closeMenu()">Close Menu</button>
+            <ul>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
         </div>
     </div>
+
+    <!-- Open Menu Button -->
+    <button onclick="openMenu()">Open Menu</button>
+
+    <script>
+        function openMenu() {
+            const container = document.getElementById('container');
+            const menu = document.getElementById('menu');
+
+            container.style.right = '0%'; // Slide in
+            menu.style.opacity = '1'; // Make content visible
+        }
+
+        function closeMenu() {
+            const container = document.getElementById('container');
+            const menu = document.getElementById('menu');
+
+            container.style.right = '-100%'; // Slide out
+            menu.style.opacity = '0'; // Make content invisible
+        }
+    </script>
+</body>
+</html>
+
+                 <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                 </ul>    
+                </div>   
+        
+        </div>
+    </header>
+    <style>
+        .task-priority-low { color: green; }
+        .task-priority-medium { color: orange; }
+        .task-priority-high { color: red; }
+        .task-item { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1 id="title">Add Task</h1>
+
+    <!-- Task Input Section -->
+    <div class="Task-Input">
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <input type="date" id="task-date" />
+        <select id="task-priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- Incomplete Tasks Section -->
+    <h2>Incomplete Tasks</h2>
+    <div id="task-list"></div>
+
+    <!-- Completed Tasks Section -->
+    <h2>Completed Tasks</h2>
+    <div id="completed-list"></div>
 
     <script src="script.js"></script>
 </body>
