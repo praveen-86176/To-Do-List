@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sessionStorage.removeItem("currentUser");
         sessionStorage.setItem("loggedIn", "false");
         sessionStorage.setItem("alertShown", "false");
+        localStorage.removeItem("taskList");
         alert("You have logged out.");
 
         // Replace history state and redirect to login page
